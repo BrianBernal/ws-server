@@ -1,0 +1,32 @@
+{
+  "name": "server-websocket",
+  "version": "1.0.0",
+  "description": "Just basic pbasic practice of websockets to follow my notion learning path",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianBernal/ws-server.git"
+  },
+  "keywords": [
+    "node",
+    "web",
+    "sockets",
+    "javascript"
+  ],
+  "author": "Brian Bernal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianBernal/ws-server/issues"
+  },
+  "homepage": "https://github.com/BrianBernal/ws-server#readme"
+}
