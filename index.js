@@ -11,7 +11,6 @@ import http from 'http';
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
-// Our port
 const port = 3000;
 
 // App and server
@@ -34,6 +33,10 @@ app.ws('/ws', async (ws/* , req */) => {
   ws.on('message', async (msg) => {
     // If a message occurs, we'll console log it on the server
     console.log(msg);
-    // Start listening for messages
+    // Send back some data
+    ws.send(JSON.stringify({
+      append: true,
+      returnText: 'I am using WebSockets!',
+    }));
   });
 });
